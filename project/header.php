@@ -54,8 +54,10 @@
 			<span class="header-time-letter-spacing" id="time"></span>
 		  </div>
 
-		  <span class="w3-bar-item invisible" id="username"><b>
-			<?php if(isset($_SESSION['user']))echo $_SESSION['user'];?></b></span>
+		  <span class="w3-bar-item invisible" id="username">
+			<?php
+			echo "<a href='des.php'>";
+			 if(isset($_SESSION['user']))echo $_SESSION['user'];?></a></span>
 		  <a id="logout" class="w3-bar-item w3-button w3-black w3-round-large"
 			style="display:none;" href="logout.php">Logout</a>
 		</div>
