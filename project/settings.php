@@ -2,7 +2,6 @@
 	if(isset($_POST['submitSettings'])){
 		//set all the preferences in cookie
 		setcookie("country",$_POST['country']);
-		setcookie("language",$_POST['language']);
 		setcookie("currency",$_POST['currency']);
 		setcookie("color",$_POST['color']);
 		echo "<script>alert(\"Settings have been saved\");
