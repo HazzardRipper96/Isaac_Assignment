@@ -7,7 +7,8 @@
 	$quantity = $_POST['quantity'];
 	$amount = $price*$quantity;
 
-	$query = "INSERT INTO product(product_name, product_price, product_quantity, total_price) VALUES ('$productname', '$price', '$quantity', '$amount')";
+	$query = "INSERT INTO product(product_name, product_price, product_quantity, total_price)
+	VALUES ('$productname', '$price', '$quantity', '$amount')";
 
 	if(mysqli_query($dbconnect, $query)){
 		echo "<script>alert(\"You have successfully added the item\");</script>";
